@@ -1,0 +1,52 @@
+ <div class="row">
+    <div class="col-md-12" ng-show="posts.length > 0"  >
+
+
+
+
+     <div >
+       <!-- <section id="pins" show-posts="">
+
+            <article class="white-panel" ng-repeat="data in posts"  >
+
+
+                <img ng-src="img/{{data.idposts}}.png" alt=" {{dataItem.title}} image" />
+
+                <h1><b>{{data.title}}</b></h1>
+
+                <p>{{data.owner}}</p>
+                <p>{{data.description}}..</p>
+                <p>{{data.date}}</p>
+                <h1><a href="#/post/{{data.idposts}}">Continue reading</a></h1>
+
+
+            </article>
+
+
+
+        </section>-->
+         <ul class="dynamic-grid" angular-grid="posts" grid-width="250" gutter-size="10" angular-grid-id="gallery" refresh-on-img-load="false" >
+             <li data-ng-repeat="data in posts" class="white-panel">
+                 <img ng-src="img/{{data.idposts}}.png" class="grid-img"  alt=" {{dataItem.title}} image" />
+
+                 <h1><b>{{data.title}}</b></h1>
+
+                 <p>{{data.owner}}</p>
+                 <p>{{data.description}}..</p>
+                 <p><i class="glyphicon glyphicon-edit"></i> {{data.date}}</p>
+                 <h1><a href="#/post/{{data.idposts}}">Continue reading</a></h1>
+
+             </li>
+         </ul>
+
+
+   </div>
+        </div>
+     <div class="col-md-12" ng-show="posts.length == 0">
+        <div class="col-md-12">
+            <h4>No posts found</h4>
+        </div>
+    </div>
+</div>
+
+

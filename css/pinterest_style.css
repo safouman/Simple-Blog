@@ -1,0 +1,99 @@
+#pins{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.white-panel {
+    position: absolute;
+    background: white;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    padding: 10px;
+    text-align: center;
+}
+.white-panel h1 {
+    font-size: 1em;
+}
+.white-panel h1 a {
+    color: #A92733;
+
+}
+.white-panel:hover {
+    visibility: visible;
+    box-shadow: 1px 1px 10px rgba(206, 206, 206, 0.42);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+   color: #fff;
+    background-color: rgba(0, 0, 0, 0.12);
+
+}
+
+/*.navbar{
+    /!* Location of the image *!/
+    background-image: url(background.jpg);
+
+    /!* Background image is centered vertically and horizontally at all times *!/
+    background-position: center center;
+
+    /!* Background image doesn't tile *!/
+    background-repeat: no-repeat;
+
+    /!* Background image is fixed in the viewport so that it doesn't move when
+       the content's height is greater than the image's height *!/
+    background-attachment: fixed;
+
+    /!* This is what makes the background image rescale based
+       on the container's size *!/
+    background-size: cover;
+
+    /!* Set a background color that will be displayed
+       while the background image is loading *!/
+    background-color: rgba(154, 155, 160, 0.05);
+}*/
+body {
+    background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} .dynamic-grid{
+      position: relative;
+      display: none;
+  }
+
+.dynamic-grid.angular-grid{
+    display: block;
+}
+
+.grid {
+    border: 1px solid #cccccc;
+    position: absolute;
+    list-style: none;
+    background: #ffffff;
+    box-sizing: border-box;
+    -moz-box-sizing : border-box;
+    -webkit-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+/*.grid-img {
+    width: 100%;
+    vertical-align: middle;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+}*/
+
+.grid-img.img-loaded{
+    visibility: visible;
+    opacity: 1;
+}
